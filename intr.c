@@ -3,8 +3,8 @@ void main()
 {
     int i,star,space,j,n;
     scanf("%d",&n);
-    star=n;
-    space=0;
+    star=1;
+    space=n-1;
     for(i=0;i<n;i++)
     {
         for(j=0;j<space;j++)
@@ -16,7 +16,7 @@ void main()
             printf("*");
         }
         printf("\n");
-        star=star-1;
-        space=space+1;
+        star=star+2;
+        space=space-1;
     }
 }
